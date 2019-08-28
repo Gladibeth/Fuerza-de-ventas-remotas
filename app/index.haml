@@ -4,7 +4,57 @@
     %meta{charset: "UTF-8"}/
     %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
     %title Fuerza de ventas remotas
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
     %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+
   %body
+    %header
+      %nav.navbar.navbar-expand-md.fixed-top.navbar-fixed-js
+        .main-brand
+          %a.navbar-brand{:href => "#"}
+            %img#iso{:src => "assets/img/logo.png"}/
+          %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
+            %span.navbar-toggler-icon
+        #navbarsExampleDefault.navbar-collapse.offcanvas-collapse
+          %ul.navbar-nav.mr-autos
+            %li.nav-item
+              %a.nav-link{:href => "#"} Inicio
+            %li.nav-item
+              %a.nav-link{:href => "#"} Servicios
+            %li.nav-item
+              %a.nav-link{:href => "#"} Clientes
+        .main-nav__search
+          %a{:href => "#exampleModal", "data-toggle" => "modal"}
+            %i.fa.fa-search
+          %a.main-nav__mail{:href => "#exampleModal", "data-toggle" => "modal"}
+            %i.fa.fa-envelope-o
+    .main-banner
+      .main-banner__content
+        .main-banner__item
+          .overlay
+            .main-banner__text
+              .main-banner__title
+                %p Lorem
+                %span ipsum
+              .main-banner__description
+                %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam. 
+            .main-banner__img
+              %img{ :src => "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"}/
+        .main-banner__item
+          .overlay
+            .main-banner__text
+              .main-banner__title
+                %p Lorem
+                %span ipsum
+              .main-banner__description
+                %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam. 
+            .main-banner__img
+              %img{ :src => "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"}/
+         
     %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
     %script{src: "assets/js/main.js"}
