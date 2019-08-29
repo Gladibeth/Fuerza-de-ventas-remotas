@@ -9,78 +9,185 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/slick.css" rel="stylesheet">
   <link href="assets/css/slick-theme.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-md fixed-top navbar-fixed-js">
-      <div class="main-brand">
-        <a class="navbar-brand" href="#">
-            <img id="iso" src="assets/img/logo.png">
-          </a>
-        <button class="navbar-toggler p-0 border-0" data-toggle="offcanvas" type="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <div class="nav-top__header">
+        <div class="nav-top__content d-flex pl-4 pr-4 justify-content-between">
+          <div class="main-nav__contact">
+            <a class="mr-3" href="#">
+                <i class="fa fa-phone"></i>
+                <span>(+569) 0 123 45 67</span>
+              </a>
+            <a href="#">
+                <i class="fa fa-envelope"></i>
+                <span>Contacto@fuerzadeventaremota.cl</span>
+              </a>
+          </div>
+          <div class="main-nav__redes">
+            <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            <a href="#">
+                <i class="fa fa-linkedin"></i>
+              </a>
+          </div>
+        </div>
       </div>
-      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-autos">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Clientes</a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-nav__search">
-        <a data-toggle="modal" href="#exampleModal">
-            <i class="fa fa-search"></i>
-          </a>
-        <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
-            <i class="fa fa-envelope-o"></i>
-          </a>
+      <div class="container">
+        <div class="main-brand">
+          <a class="navbar-brand" href="#">
+              <img id="iso" src="assets/img/logo.png">
+            </a>
+          <button class="navbar-toggler p-0 border-0" data-toggle="offcanvas" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse offcanvas-collapse">
+          <ul class="navbar-nav mr-autos">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Clientes</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
   <div class="main-banner">
     <div class="main-banner__content">
       <div class="main-banner__item">
-        <div class="overlay">
+        <div class="mask">
           <div class="main-banner__text">
             <div class="main-banner__title">
-              <p>Lorem</p>
-              <span>ipsum</span>
+              <p>Somos expetos en lo que hacemos</p>
             </div>
             <div class="main-banner__description">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam.</p>
+              <p>Modelo innovador en cuanto a técnicas comerciales y de partnership con nuestros clientes</p>
             </div>
           </div>
-          <div class="main-banner__img">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80">
-          </div>
+        </div>
+        <div class="main-banner__img">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80">
         </div>
       </div>
       <div class="main-banner__item">
-        <div class="overlay">
-          <div class="main-banner__text">
-            <div class="main-banner__title">
-              <p>Lorem</p>
-              <span>ipsum</span>
-            </div>
-            <div class="main-banner__description">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam.</p>
-            </div>
+        <div class="main-banner__text">
+          <div class="main-banner__title">
+            <p>Deja tu gestión comercial en nuestras manos</p>
           </div>
-          <div class="main-banner__img">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80">
+          <div class="main-banner__description">
+            <p>Nos enfocamos en generación de leads combinando nuestras experiencia en ventas + el marketing digital.</p>
           </div>
+        </div>
+        <div class="main-banner__img">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80">
         </div>
       </div>
     </div>
   </div>
+  <section class="main-about">
+    <div class="container">
+      <div class="main-about__content">
+        <div class="main-about__imgs">
+          <div class="main-about__img--first">
+            <img class="img-round" src="https://images.unsplash.com/photo-1539343915366-4da26f7a1f2c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80">
+          </div>
+          <div class="main-about__img--second">
+            <img class="img-round" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80">
+          </div>
+        </div>
+        <div class="main-about__info">
+          <div class="main-about-text">
+            Nosotros
+          </div>
+          <div class="main-about__title">
+            Quiénes Somos
+          </div>
+          <p class="main-about__description">De acuerdo a los tiempos de hoy, donde la inclusión es un derecho humano, ofrecemos un servicio único en el mercado, aprovechando la experiencia en ventas de mujeres que han decidido dedicar tiempo a sus hijos y trabajar desde casa, las cuales
+            reincertamos en el mercado laboral, no perdiendo el foco en el cliente y en las metas a conseguir.</p>
+          <p class="main-about__description">Por otra parte, nuestros honorarios se basan en un método sin par para empresas en proceso de crecimiento comercial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main-client">
+    <div class="container">
+      <div class="main-about-text">
+        Nuestros clientes
+      </div>
+      <div class="main-client__title">
+        Clientes
+      </div>
+      <div class="main-client__content">
+        <div class="main-client__item">
+          <div class="main-client__img">
+            <img class="img-round" src="assets/img/clients/1.jpg">
+          </div>
+        </div>
+        <div class="main-client__item">
+          <div class="main-client__img">
+            <img class="img-round" src="assets/img/clients/2.png">
+          </div>
+        </div>
+        <div class="main-client__item">
+          <div class="main-client__img">
+            <img class="img-round" src="assets/img/clients/3.png">
+          </div>
+        </div>
+        <div class="main-client__item">
+          <div class="main-client__img">
+            <img class="img-round" src="assets/img/clients/4.png">
+          </div>
+        </div>
+        <div class="main-client__item">
+          <div class="main-client__img">
+            <img class="img-round" src="assets/img/clients/5.png">
+          </div>
+        </div>
+        <div class="main-client__item">
+          <div class="main-client__img">
+            <img class="img-round" src="assets/img/clients/6.png">
+          </div>
+        </div>
+        <div class="main-client__item">
+          <div class="main-client__img">
+            <img class="img-round" src="assets/img/clients/7.png">
+          </div>
+        </div>
+        <div class="main-client__item">
+          <div class="main-client__img">
+            <img class="img-round" src="assets/img/clients/3.png">
+          </div>
+        </div>
+        <div class="main-client__item">
+          <div class="main-client__img">
+            <img class="img-round" src="assets/img/clients/4.png">
+          </div>
+        </div>
+        <div class="main-client__item">
+          <div class="main-client__img">
+            <img class="img-round" src="assets/img/clients/5.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main-parallax">
+    <div class="overlay"></div>
+  </section>
+  <section class="main-steps"></section>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
