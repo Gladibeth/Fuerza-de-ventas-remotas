@@ -8,54 +8,85 @@
     %link{rel: "stylesheet", href:"assets/css/main.css"}/
     %link{rel: "stylesheet", href:"assets/css/slick.css"}/
     %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
 
   %body
-    %header
+    %header   
       %nav.navbar.navbar-expand-md.fixed-top.navbar-fixed-js
-        .main-brand
-          %a.navbar-brand{:href => "#"}
-            %img#iso{:src => "assets/img/logo.png"}/
-          %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
-            %span.navbar-toggler-icon
-        #navbarsExampleDefault.navbar-collapse.offcanvas-collapse
-          %ul.navbar-nav.mr-autos
-            %li.nav-item
-              %a.nav-link{:href => "#"} Inicio
-            %li.nav-item
-              %a.nav-link{:href => "#"} Servicios
-            %li.nav-item
-              %a.nav-link{:href => "#"} Clientes
-        .main-nav__search
-          %a{:href => "#exampleModal", "data-toggle" => "modal"}
-            %i.fa.fa-search
-          %a.main-nav__mail{:href => "#exampleModal", "data-toggle" => "modal"}
-            %i.fa.fa-envelope-o
+        .nav-top__header
+          .nav-top__content.d-flex.pl-4.pr-4.justify-content-between
+            .main-nav__contact
+              %a.mr-3{ href: '#' }
+                %i.fa.fa-phone 
+                %span (+569) 0 123 45 67
+              %a{ href: '#' }
+                %i.fa.fa-envelope
+                %span Contacto@fuerzadeventaremota.cl
+            .main-nav__redes
+              %a{ href: '#' }
+                %i.fa.fa-facebook 
+              %a{ href: '#' }
+                %i.fa.fa-twitter
+              %a{ href: '#' }
+                %i.fa.fa-linkedin
+
+        .container
+          .main-brand
+            %a.navbar-brand{:href => "#"}
+              %img#iso{:src => "assets/img/logo.png"}/
+            %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
+              %span.navbar-toggler-icon
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item
+                %a.nav-link{:href => "#"} Inicio
+              %li.nav-item
+                %a.nav-link{:href => "#"} Servicios
+              %li.nav-item
+                %a.nav-link{:href => "#"} Clientes
+
     .main-banner
       .main-banner__content
         .main-banner__item
-          .overlay
+          .mask
             .main-banner__text
               .main-banner__title
-                %p Lorem
-                %span ipsum
+                %p Somos expetos en lo que hacemos
               .main-banner__description
-                %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam. 
-            .main-banner__img
-              %img{ :src => "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"}/
+                %p Modelo innovador en cuanto a tecnicas comerciales y de partnership con nuestros clientes 
+          .main-banner__img
+            %img{ :src => "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"}/
         .main-banner__item
-          .overlay
+          .mask
             .main-banner__text
               .main-banner__title
-                %p Lorem
-                %span ipsum
+                %p Deja tu gestion comercial en nuestras manos
               .main-banner__description
-                %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam. 
-            .main-banner__img
-              %img{ :src => "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"}/
-
+                %p Nos enfocamos en generacion de leads combinando nuestras experiencia en ventas + el marketing digital.
+          .main-banner__img
+            %img{ :src => "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"}/
+    %section.main-about
+      .container
+        .main-about__content
+          .main-about__imgs
+            .main-about__img--first
+              %img.img-round{ :src => "https://images.unsplash.com/photo-1539343915366-4da26f7a1f2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"}/
+            .main-about__img--second
+              %img.img-round{ :src => "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"}/
+          .main-general__info
+            .main-general-text
+              Nosotros
+            .main-general__title
+              Quienes Somos
+            %p.main-about__description De acuerdo a los tiempos de hoy, donde la inclusion es un derecho humano, ofrecemos un servicio unico en el mercado, aprovechando la experiencia en ventas de mujeres que han decidido dedicar tiempo a sus hijos y trabajar desde casa, las cuales reincertamos en el mercado laboral, no perdiendo el foco en el cliente y en las metas a conseguir.
+            %p.main-about__description Por otra parte, nuestros honorarios se basan en un metodo sin par para empresas en proceso de crecimiento comercial.
     %section.main-training.container
       .main-training__content
-        %h2 Capacitacion de ventas y productos
+        .main-general__info
+          .main-general-text
+            Nosotros
+          .main-general__title
+            Quienes Somos
         .main-training__body
           .main-training__img
             %img{ :src => "https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"}/
@@ -84,7 +115,7 @@
                     %h2 Capacitacion operacional
                   .main-training__text
                     %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam.
-
+        
         .main-training__body
           .main-training__process
             .main__super
@@ -112,10 +143,54 @@
                   .main-training__text
                     %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam.  
           .main-training__img
+            .main-general__info.main-general__info--right
+              .main-general-text
+                Nosotros
+              .main-general__title
+                Quienes Somos
             %img{ :src => "https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+    
 
-
-
+    %section.main-client
+      .container
+        .main-about-text
+          Nuestros clientes
+        .main-client__title
+          Clientes
+        .main-client__content
+          .main-client__item
+            .main-client__img
+              %img.img-round{ :src => "assets/img/clients/1.jpg"}/
+          .main-client__item
+            .main-client__img
+              %img.img-round{ :src => "assets/img/clients/2.png"}/
+          .main-client__item
+            .main-client__img
+              %img.img-round{ :src => "assets/img/clients/3.png"}/
+          .main-client__item
+            .main-client__img
+              %img.img-round{ :src => "assets/img/clients/4.png"}/
+          .main-client__item
+            .main-client__img
+              %img.img-round{ :src => "assets/img/clients/5.png"}/
+          .main-client__item
+            .main-client__img
+              %img.img-round{ :src => "assets/img/clients/6.png"}/
+          .main-client__item
+            .main-client__img
+              %img.img-round{ :src => "assets/img/clients/7.png"}/
+          .main-client__item
+            .main-client__img
+              %img.img-round{ :src => "assets/img/clients/3.png"}/
+          .main-client__item
+            .main-client__img
+              %img.img-round{ :src => "assets/img/clients/4.png"}/
+          .main-client__item
+            .main-client__img
+              %img.img-round{ :src => "assets/img/clients/5.png"}/    
+    %section.main-parallax
+      .overlay     
+    %section.main-steps
     %script{src: "assets/js/jquery.min.js"}
     %script{src: "assets/js/bootstrap.min.js"}
     %script{src: "assets/js/slick.min.js"}

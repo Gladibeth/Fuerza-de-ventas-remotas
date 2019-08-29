@@ -7,7 +7,17 @@ $breakpoints: ('xs': "(min-width: 0px) and (max-width: 767px)",
 ) !default;
 
 // Fonts
-$montserrat: 'Montserrat',
+
+@font-face {
+  font-family: "Century Gothic";
+  font-style: normal;
+  src: url('../fonts/GOTHIC.TTF') format('ttf'),
+    url('../fonts/GOTHICB.TTF') format('ttf'),
+    url('../fonts/GOTHICBI.TTF') format('ttf'),
+    url('../fonts/GOTHICI.TTF') format('ttf');
+}
+
+$CenturyGothic: "Century Gothic",
 sans-serif;
 
 // General
