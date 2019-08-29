@@ -150,3 +150,93 @@
     }
   }
 }
+
+// training
+.main-training {
+  .main-training__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    background: #fff;
+    margin-bottom: 50px;
+
+    .main__super {
+      padding: 0 50px;
+    }
+  }
+
+  .main-training__img {
+    text-align: center;
+
+    img {
+      width: 400px;
+      height: 440px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+
+  .main-training__process {
+    display: inline-block;
+
+    .main-training__text {
+      padding: 0;
+      opacity: 1;
+      float: left;
+      text-align: left;
+      position: relative;
+
+      p {
+        color: gray;
+        font-size: 15px;
+        line-height: 23px;
+        font-weight: 400;
+      }
+    }
+
+    span {
+      color: #ccccda;
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 70px;
+    }
+  }
+
+  .main-training__number {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+
+    &:nth-child(1):before{
+      width: 1px;
+      height: 46%;
+      background: #ccccda;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 7%;
+    }
+
+    &:nth-child(3):before{
+      width: 1px;
+      height: 46%;
+      background: #ccccda;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+    }
+  }
+
+  .main-training__title {
+    h2 {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
+
+  .main-training__container {
+    margin-left: 45px;
+  }
+
+}
