@@ -4,7 +4,7 @@
 @import "setting-slick";
 
 section {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 
 .img-round {
@@ -200,6 +200,7 @@ section {
   &.main-general__info--right {
     text-align: right;
   }
+
   .main-general__title {
     font-size: 50px;
     font-weight: 700;
@@ -259,6 +260,7 @@ section {
     grid-gap: 10px;
     background: #fff;
     margin-bottom: 50px;
+    margin-top: 50px;
 
     .main__super {
       padding: 0 50px;
@@ -267,6 +269,10 @@ section {
 
   .main-training__img {
     text-align: center;
+
+    &.main-training__img--two {
+      margin-top: 50px;
+    }
 
     img {
       width: 100%;
@@ -295,7 +301,7 @@ section {
     }
 
     span {
-      color: #ccccda;
+      color: rgba(223, 130, 57, 0.67);
       font-size: 4rem;
       font-weight: 800;
       margin-bottom: 70px;
@@ -307,20 +313,20 @@ section {
     position: relative;
     align-items: center;
 
-    &:nth-child(1):before{
+    &:nth-child(1):before {
       width: 1px;
       height: 46%;
-      background: #ccccda;
+      background: rgba(223, 130, 57, 0.67);
       content: '';
       position: absolute;
       bottom: 0;
       left: 7%;
     }
 
-    &:nth-child(3):before{
+    &:nth-child(3):before {
       width: 1px;
       height: 46%;
-      background: #ccccda;
+      background: rgba(223, 130, 57, 0.67);
       content: '';
       position: absolute;
       bottom: 0;
@@ -339,6 +345,7 @@ section {
     margin-left: 45px;
   }
 }
+
 .main-parallax {
   background-image: url('../img/about.jpg');
   background-size: cover;
@@ -355,5 +362,72 @@ section {
     bottom: 0;
     background: black;
     opacity: .5;
+  }
+}
+
+.main-service__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  margin-top: 50px;
+}
+
+.main-service__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-service__info {
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.main-service__title {
+  color: $lightBlack;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main-service__description {
+  color: gray;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.main-service__img {
+  width: 100px;
+  height: 100px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.main-footer {
+  padding: 50px 0;
+  // background-color: #000;
+}
+
+.main-footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer__contact {
+  a {
+    color: $orange;
+    font-size: 17px;
+
+  }
+}
+
+.main-footer__redes {
+  a {
+    color: $orange;
+    font-size: 17px;
+    margin-right: 5px;
   }
 }

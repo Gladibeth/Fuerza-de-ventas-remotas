@@ -80,6 +80,42 @@
               Quienes Somos
             %p.main-about__description De acuerdo a los tiempos de hoy, donde la inclusion es un derecho humano, ofrecemos un servicio unico en el mercado, aprovechando la experiencia en ventas de mujeres que han decidido dedicar tiempo a sus hijos y trabajar desde casa, las cuales reincertamos en el mercado laboral, no perdiendo el foco en el cliente y en las metas a conseguir.
             %p.main-about__description Por otra parte, nuestros honorarios se basan en un metodo sin par para empresas en proceso de crecimiento comercial.
+    %section.main-service
+      .container
+        .main-general__info
+          .main-general-text
+            Nosotros
+          .main-general__title
+            Servicios
+        .main-service__content
+          .main-service__item
+            .main-service__box
+              .main-service__img
+                %img.img-round{ :src => "assets/img/icons/win.png"}/
+              .main-service__info
+                .main-service__title
+                  Leads calificados
+                .main-service__description
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nostrum saepe dolor, repellendus impedit.
+          .main-service__item
+            .main-service__box
+              .main-service__img
+                %img.img-round{ :src => "assets/img/icons/meeting.png"}/
+              .main-service__info
+                .main-service__title
+                  Reuniones con prospectos  de clientes
+                .main-service__description
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nostrum saepe dolor, repellendus impedit.
+          .main-service__item
+            .main-service__box
+              .main-service__img
+                %img.img-round{ :src => "assets/img/icons/sales.png"}/
+              .main-service__info
+                .main-service__title
+                  Fuerza de ventas
+                .main-service__description
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nostrum saepe dolor, repellendus impedit.
+
     %section.main-training.container
       .main-training__content
         .main-general__info
@@ -115,7 +151,11 @@
                     %h2 Capacitacion operacional
                   .main-training__text
                     %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam.
-        
+        .main-general__info.main-general__info--right
+          .main-general-text
+            Prospeccion y Seguimiento 
+          .main-general__title
+            De Clientes
         .main-training__body
           .main-training__process
             .main__super
@@ -143,20 +183,17 @@
                   .main-training__text
                     %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam.  
           .main-training__img
-            .main-general__info.main-general__info--right
-              .main-general-text
-                Prospeccion y Seguimiento 
-              .main-general__title
-                De Clientes
+            
             %img{ :src => "https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
     
 
     %section.main-client
       .container
-        .main-about-text
-          Nuestros clientes
-        .main-client__title
-          Clientes
+        .main-general__info
+          .main-general-text
+            Nuestros clientes
+          .main-general__title
+            Clientes
         .main-client__content
           .main-client__item
             .main-client__img
@@ -189,8 +226,27 @@
             .main-client__img
               %img.img-round{ :src => "assets/img/clients/5.png"}/    
     %section.main-parallax
-      .overlay     
+      .overlay
+           
     %section.main-steps
+
+    %footer.main-footer
+      .container
+        .main-footer__content
+          .main-footer__contact
+            %a.mr-3{ href: '#' }
+              %i.fa.fa-phone 
+              %span (+569) 0 123 45 67
+            %a{ href: '#' }
+              %i.fa.fa-envelope
+              %span Contacto@fuerzadeventaremota.cl
+          .main-footer__redes
+            %a{ href: '#' }
+              %i.fa.fa-facebook 
+            %a{ href: '#' }
+              %i.fa.fa-twitter
+            %a{ href: '#' }
+              %i.fa.fa-linkedin
     %script{src: "assets/js/jquery.min.js"}
     %script{src: "assets/js/bootstrap.min.js"}
     %script{src: "assets/js/slick.min.js"}
