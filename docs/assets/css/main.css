@@ -438,18 +438,22 @@ section {
   object-fit: cover;
 }
 
-.main-about__info .main-about__title {
+.main-general__info.main-general__info--right {
+  text-align: right;
+}
+
+.main-general__info .main-general__title {
   font-size: 50px;
   font-weight: 700;
 }
 
-.main-about__info .main-about__description {
+.main-general__info .main-general__description {
   color: #707070;
   font-size: 15px;
   line-height: 25px;
 }
 
-.main-about-text {
+.main-general-text {
   display: block;
   margin: 0;
   font-style: italic;
@@ -458,7 +462,7 @@ section {
   line-height: 22px;
 }
 
-.main-about-text:before {
+.main-general-text:before {
   content: "_____";
   margin: 0 5px;
   bottom: .5em;
@@ -483,6 +487,90 @@ section {
 
 .main-client__content .main-client__item img {
   width: 100%;
+}
+
+.main-training .main-training__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+.main-training .main-training__body .main__super {
+  padding: 0 50px;
+}
+
+.main-training .main-training__img {
+  text-align: center;
+}
+
+.main-training .main-training__img img {
+  width: 100%;
+  height: 440px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.main-training .main-training__process {
+  display: inline-block;
+}
+
+.main-training .main-training__process .main-training__text {
+  padding: 0;
+  opacity: 1;
+  float: left;
+  text-align: left;
+  position: relative;
+}
+
+.main-training .main-training__process .main-training__text p {
+  color: gray;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.main-training .main-training__process span {
+  color: #ccccda;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 70px;
+}
+
+.main-training .main-training__number {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+
+.main-training .main-training__number:nth-child(1):before {
+  width: 1px;
+  height: 46%;
+  background: #ccccda;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 7%;
+}
+
+.main-training .main-training__number:nth-child(3):before {
+  width: 1px;
+  height: 46%;
+  background: #ccccda;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+.main-training .main-training__title h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.main-training .main-training__container {
+  margin-left: 45px;
 }
 
 .main-parallax {
