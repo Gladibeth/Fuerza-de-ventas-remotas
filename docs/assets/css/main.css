@@ -255,7 +255,7 @@ body {
 }
 
 section {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 
 .img-round {
@@ -502,6 +502,7 @@ section {
   grid-gap: 10px;
   background: #fff;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .main-training .main-training__body .main__super {
@@ -510,6 +511,10 @@ section {
 
 .main-training .main-training__img {
   text-align: center;
+}
+
+.main-training .main-training__img.main-training__img--two {
+  margin-top: 50px;
 }
 
 .main-training .main-training__img img {
@@ -539,7 +544,7 @@ section {
 }
 
 .main-training .main-training__process span {
-  color: #ccccda;
+  color: rgba(223, 130, 57, 0.67);
   font-size: 4rem;
   font-weight: 800;
   margin-bottom: 70px;
@@ -554,7 +559,7 @@ section {
 .main-training .main-training__number:nth-child(1):before {
   width: 1px;
   height: 46%;
-  background: #ccccda;
+  background: rgba(223, 130, 57, 0.67);
   content: '';
   position: absolute;
   bottom: 0;
@@ -564,7 +569,7 @@ section {
 .main-training .main-training__number:nth-child(3):before {
   width: 1px;
   height: 46%;
-  background: #ccccda;
+  background: rgba(223, 130, 57, 0.67);
   content: '';
   position: absolute;
   bottom: 0;
@@ -599,6 +604,7 @@ section {
   opacity: .5;
 }
 
+<<<<<<< HEAD
 .main-parallax .main-parallax__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -754,4 +760,65 @@ section {
   font-weight: 800;
   opacity: .3;
   color: #607D8B;
+=======
+.main-service__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  margin-top: 50px;
+}
+
+.main-service__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-service__info {
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.main-service__title {
+  color: #0B1A1C;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main-service__description {
+  color: gray;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.main-service__img {
+  width: 100px;
+  height: 100px;
+}
+
+.main-service__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-footer {
+  padding: 50px 0;
+}
+
+.main-footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer__contact a {
+  color: #DF8239;
+  font-size: 17px;
+}
+
+.main-footer__redes a {
+  color: #DF8239;
+  font-size: 17px;
+  margin-right: 5px;
+>>>>>>> 73755625bf3f1b96ec8706b973bcf159769f3701
 }
