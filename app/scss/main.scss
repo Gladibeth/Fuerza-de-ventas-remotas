@@ -376,11 +376,12 @@ section {
 .main-how {
   h3 {
     color: #fff;
-
   }
+
   p {
     color:#fff;
   }
+
   .transition, p {
     transition: all 0.25s ease-in-out;
   }
@@ -400,6 +401,7 @@ section {
     perspective: 900;
     padding: 0;
     margin: 0;
+
     li {
       position: relative;
       padding: 0;
@@ -410,6 +412,7 @@ section {
       &:nth-of-type(1) {
         animation-delay: 0.5s;
       }
+
       &:nth-of-type(2) {
         animation-delay: 0.75s;
       }
@@ -438,6 +441,7 @@ section {
           transform: translate(2px, 0) rotate(-45deg);
         }
       }
+
       input[type=checkbox] {
         position: absolute;
         cursor: pointer;
@@ -491,6 +495,27 @@ section {
     100% {
       transform-origin: top center;
       transform: rotateX(0deg);
+    }
+  }
+}
+
+.main-steps__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+
+  .main-steps__body {
+    padding: 20px;
+    box-shadow: 3px 4px 15px 0 rgba(42, 50, 97, 0.21);
+    text-align: center;
+    position: relative;
+
+    span {
+      position: absolute;
+      font-size: 3rem;
+      font-weight: 800;
+      opacity: .3;
+      color: #607D8B;
     }
   }
 }

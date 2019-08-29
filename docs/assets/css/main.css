@@ -734,3 +734,24 @@ section {
     transform: rotateX(0deg);
   }
 }
+
+.main-steps__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.main-steps__content .main-steps__body {
+  padding: 20px;
+  box-shadow: 3px 4px 15px 0 rgba(42, 50, 97, 0.21);
+  text-align: center;
+  position: relative;
+}
+
+.main-steps__content .main-steps__body span {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: 800;
+  opacity: .3;
+  color: #607D8B;
+}
