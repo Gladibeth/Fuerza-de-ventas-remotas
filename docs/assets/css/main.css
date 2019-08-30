@@ -539,6 +539,12 @@ button:focus {
 .main-nav__redes a {
   color: #F7FCF9;
   margin-right: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.main-nav__redes a:hover {
+  transition: 0.3s ease-in-out;
+  color: #DF8239;
 }
 
 .main-banner {
@@ -1260,14 +1266,17 @@ button:focus {
   font-size: 17px;
   margin-bottom: 10px;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.main-footer__contact a:hover {
+  transition: 0.3s ease-in-out;
+  color: #DF8239;
+  text-decoration: none;
 }
 
 .main-footer__contact a i {
   margin-right: 10px;
-}
-
-.main-footer__contact a:hover {
-  text-decoration: none;
 }
 
 .main-footer__redes a {

@@ -142,6 +142,12 @@ button:focus {
   a {
     color: $lightWhite;
     margin-right: 5px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transition: 0.3s ease-in-out;
+      color: $orange;
+    }
   }
 }
 
@@ -832,15 +838,17 @@ button:focus {
     font-size: 17px;
     margin-bottom: 10px;
     text-decoration: none;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transition: 0.3s ease-in-out;
+      color: $orange;
+      text-decoration: none;
+    }
 
     i {
       margin-right: 10px;
     }
-
-    &:hover {
-      text-decoration: none;
-    }
-
   }
 }
 
@@ -849,6 +857,7 @@ button:focus {
     color: gray;
     font-size: 17px;
     margin-right: 5px;
+
   }
 }
 
