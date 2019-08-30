@@ -1,10 +1,20 @@
 @import "variables";
 @import "mixins";
+@import "body";
+@import "buttons";
 @import "offcanvas";
 @import "setting-slick";
 
 section {
   padding: 100px 0 0 0;
+
+  @include respond-to(xs) {
+    padding: 50px 0 0 0;
+  }
+}
+
+button:focus {
+  outline: 5px auto transparent;
 }
 
 .img-round {
@@ -20,6 +30,16 @@ section {
   flex-direction: column;
   height: 115px;
 
+  @include respond-to(sm) {
+    height: 80px;
+    background-color: $white;
+  }
+
+  @include respond-to(xs) {
+    height: 75px;
+    background-color: $white;
+  }
+
   &.fixed {
     height: 60px;
     background-color: $white;
@@ -33,6 +53,24 @@ section {
 
 .nav-item {
   padding: 0 32px;
+
+  @include respond-to(xs) {
+    padding: 0 15px;
+  }
+}
+
+.main-brand {
+  @include respond-to(sm) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include respond-to(xs) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .nav-link {
@@ -41,6 +79,10 @@ section {
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
+
+  @include respond-to(xs) {
+    color: $lightBlack;
+  }
 
 
   &.fixed-color {
@@ -74,6 +116,14 @@ section {
   &.nav-top__header--detele {
     display: none !important;
     transition: .3s ease-in-out;
+  }
+
+  @include respond-to(sm) {
+    display: none;
+  }
+
+  @include respond-to(xs) {
+    display: none;
   }
 }
 
@@ -118,6 +168,9 @@ section {
       width: 55%;
       left: 10%;
 
+      @include respond-to(xs) {
+        width: 80%;
+      }
 
       .main-banner__title {
         p {
@@ -128,6 +181,15 @@ section {
           line-height: 1;
           margin: 0;
           font-family: $CenturyGothic;
+
+          @include respond-to(md) {
+            font-size: 55px;
+          }
+
+          @include respond-to(xs) {
+            font-size: 30px;
+            padding: 0;
+          }
         }
 
         span {
@@ -146,6 +208,15 @@ section {
         font-size: 20px;
         line-height: 2rem;
         margin: 50px 0 0 0;
+
+        @include respond-to(md) {
+          font-size: 18px;
+        }
+
+        @include respond-to(xs) {
+          font-size: 18px;
+          padding: 0;
+        }
       }
     }
   }
@@ -166,17 +237,47 @@ section {
 .main-about__content {
   display: grid;
   grid-template-columns: 60% 40%;
+
+  @include respond-to(sm) {
+    grid-template-columns: 40% 60%;
+  }
+
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+  }
+}
+
+.main-about__description {
+  color: gray;
 }
 
 .main-about__imgs {
   display: grid;
   grid-template-columns: 45% 55%;
+
+  @include respond-to(sm) {
+    grid-template-columns: 100%;
+  }
+
+  @include respond-to(xs) {
+    display: none;
+  }
+}
+
+.main-about__text {
+  @include respond-to(md) {
+    padding: 10px 30px;
+  }
 }
 
 .main-about__img--first {
   margin-top: 50px;
   width: 200px;
   height: 300px;
+
+  @include respond-to(sm) {
+    display: none;
+  }
 
   img {
     width: 100%;
@@ -200,16 +301,33 @@ section {
   &.main-general__info--right {
     text-align: right;
   }
+
   &.main-general__info--white {
     color: #fff;
     z-index: 9;
     position: absolute;
     left: 100px;
+
+    @include respond-to(sm) {
+      left: 45px;
+    }
+
+    @include respond-to(xs) {
+      left: 20px;
+    }
   }
 
   .main-general__title {
     font-size: 50px;
     font-weight: 700;
+
+    @include respond-to(sm) {
+      font-size: 40px;
+    }
+
+    @include respond-to(xs) {
+      font-size: 40px;
+    }
   }
 
   .main-general__description {
@@ -234,6 +352,10 @@ section {
     position: relative;
   }
 
+}
+
+.main-client {
+  padding-bottom: 100px;
 }
 
 .main-client__title {
@@ -268,8 +390,26 @@ section {
     margin-bottom: 50px;
     margin-top: 50px;
 
+    @include respond-to(sm) {
+      grid-template-columns: 40% 60%;
+    }
+
+    @include respond-to(xs) {
+      grid-template-columns: 100%;
+    }
+
+    &.main-training__body--right {
+      @include respond-to(sm) {
+        grid-template-columns: 60% 40%;
+      }
+    }
+
     .main__super {
       padding: 0 50px;
+
+      @include respond-to(xs) {
+        padding: 10px 0;
+      }
     }
   }
 
@@ -311,6 +451,10 @@ section {
       font-size: 4rem;
       font-weight: 800;
       margin-bottom: 70px;
+
+      @include respond-to(xs) {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -352,6 +496,9 @@ section {
   }
 }
 
+
+
+
 .main-parallax {
   background-image: url('../img/about.jpg');
   background-size: cover;
@@ -359,6 +506,10 @@ section {
   background-attachment: fixed;
   position: relative;
   background-position: 50% -140px;
+
+  @include respond-to(xs) {
+    height: auto;
+  }
 
   .overlay {
     position: absolute;
@@ -376,6 +527,20 @@ section {
     grid-gap: 80px;
     background: transparent;
     margin: 120px;
+
+    @include respond-to(md) {
+      margin: 100px 40px;
+    }
+
+    @include respond-to(sm) {
+      margin: 75px 30px;
+    }
+
+    @include respond-to(xs) {
+      grid-template-columns: 100%;
+      margin: 120px 10px 10px 10px;
+      padding-right: 40px;
+    }
   }
 }
 
@@ -383,23 +548,40 @@ section {
 .main-how {
   h3 {
     color: #fff;
+
+    @include respond-to(md) {
+      font-size: 18px;
+    }
+
+    @include respond-to(sm) {
+      font-size: 20px;
+    }
+
+    @include respond-to(xs) {
+      font-size: 25px;
+    }
   }
 
   p {
-    color:#fff;
+    color: #fff;
   }
 
-  .transition, p {
+  .transition,
+  p {
     transition: all 0.25s ease-in-out;
   }
-  
+
   ul li i {
-    &:before, &:after {
+
+    &:before,
+    &:after {
       transition: all 0.25s ease-in-out;
     }
   }
-  
-  .flipIn, h1, ul li {
+
+  .flipIn,
+  h1,
+  ul li {
     animation: flipdown 0.5s ease both;
   }
 
@@ -416,6 +598,7 @@ section {
       padding-bottom: 0;
       padding-top: 18px;
       border-bottom: 1px solid #ffffff66;
+
       &:nth-of-type(1) {
         animation-delay: 0.5s;
       }
@@ -423,27 +606,34 @@ section {
       &:nth-of-type(2) {
         animation-delay: 0.75s;
       }
+
       &:nth-of-type(3) {
         animation-delay: 1s;
       }
+
       &:last-of-type {
         padding-bottom: 0;
       }
+
       i {
         position: absolute;
         transform: translate(-6px, 0);
         margin-top: 16px;
         right: 0;
-        &:before, &:after {
+
+        &:before,
+        &:after {
           content: "";
           position: absolute;
           background-color: #e66f02;
           width: 2px;
           height: 8px;
         }
+
         &:before {
           transform: translate(-2px, 0) rotate(45deg);
         }
+
         &:after {
           transform: translate(2px, 0) rotate(-45deg);
         }
@@ -456,17 +646,20 @@ section {
         height: 100%;
         z-index: 1;
         opacity: 0;
-        &:checked ~ {
+
+        &:checked~ {
           p {
             margin-top: 0;
             max-height: 0;
             opacity: 0;
             transform: translate(0, 50%);
           }
+
           i {
             &:before {
               transform: translate(2px, 0) rotate(45deg);
             }
+
             &:after {
               transform: translate(-2px, 0) rotate(-45deg);
             }
@@ -475,30 +668,30 @@ section {
       }
     }
   }
-  
+
   @keyframes flipdown {
     0% {
       opacity: 0;
       transform-origin: top center;
       transform: rotateX(-90deg);
     }
-  
+
     5% {
       opacity: 1;
     }
-  
+
     80% {
       transform: rotateX(8deg);
     }
-  
+
     83% {
       transform: rotateX(6deg);
     }
-  
+
     92% {
       transform: rotateX(-3deg);
     }
-  
+
     100% {
       transform-origin: top center;
       transform: rotateX(0deg);
@@ -510,20 +703,40 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px;
+  margin-top: 50px;
+
+  @include respond-to(sm) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
   .main-steps__body {
     padding: 20px;
     box-shadow: 3px 4px 15px 0 rgba(42, 50, 97, 0.21);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    height: 200px;
 
     span {
       position: absolute;
       font-size: 3rem;
       font-weight: 800;
-      opacity: .3;
-      color: #607D8B;
+      opacity: .5;
+      color: $orange;
     }
+
+    p {
+      text-align: center;
+      color: gray;
+    }
+  }
+}
+
+.main-steps__content-desktop {
+  @include respond-to(xs) {
+    display: none;
+  }
 }
 
 .main-service__content {
@@ -531,6 +744,10 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
   margin-top: 50px;
+
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+  }
 }
 
 .main-service__box {
@@ -561,6 +778,11 @@ section {
   width: 100px;
   height: 100px;
 
+  @include respond-to(sm) {
+    width: 70px;
+    height: 70px;
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -568,27 +790,130 @@ section {
 }
 
 .main-footer {
-  padding: 50px 0;
+  padding: 100px 0 30px 0;
   // background-color: #000;
 }
 
+
+.main-footer__map {
+  @include respond-to(sm) {
+    display: none;
+  }
+
+  @include respond-to(xs) {
+    display: none;
+  }
+}
+
 .main-footer__content {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+  @include respond-to(sm) {
+    grid-template-columns: 50% 50%;
+  }
+
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+  }
 }
 
 .main-footer__contact {
+
+  @include respond-to(xs) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   a {
-    color: $orange;
+    color: gray;
     font-size: 17px;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+    i {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
 
   }
 }
 
 .main-footer__redes {
   a {
-    color: $orange;
+    color: gray;
     font-size: 17px;
     margin-right: 5px;
+  }
+}
+
+.main-footer__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.main-footer__subtitle {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #DF8239;
+}
+
+.main-footer__description {
+  color: gray;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  width: 100%;
+  margin: 0 0px 20px;
+  height: 45px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #F6F7F9;
+  color: #efc09c;
+  font-size: 14px;
+
+  &:focus {
+    background: rgba(223, 130, 57, 0.10);
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem transparent !important;
+
+  }
+}
+
+.main-footer__copy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  a {
+    color: $orange;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.main-footer__form {
+  @include respond-to(xs) {
+    margin-top: 30px;
   }
 }

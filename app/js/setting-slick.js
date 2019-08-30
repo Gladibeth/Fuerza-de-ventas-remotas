@@ -8,7 +8,7 @@ $('.main-banner__content').slick({
   responsive: [{
       breakpoint: 1200,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
         dots: false
@@ -17,7 +17,7 @@ $('.main-banner__content').slick({
     {
       breakpoint: 900,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     },
@@ -69,3 +69,28 @@ $('.main-client__content').slick({
     }
   ]
 });
+
+
+// $('.main-steps__content').slick({
+
+//   responsive: [{
+
+//       breakpoint: 900,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 1
+//       }
+//     },
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         dots: false,
+//         autoplay: true,
+//         arrows: false,
+//         autoplaySpeed: 1000
+//       }
+//     }
+//   ]
+// });
