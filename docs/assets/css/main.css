@@ -1,7 +1,29 @@
 @font-face {
-  font-family: "Century Gothic";
+  font-family: 'Century Gothic';
+  src: url("CenturyGothic-Italic.woff2") format("woff2"), url("CenturyGothic-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url("../fonts/CenturyGothic.woff2") format("woff2"), url("../fonts/CenturyGothic.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  src: url("../fonts/GOTHIC.TTF") format("ttf"), url("../fonts/GOTHICB.TTF") format("ttf"), url("../fonts/GOTHICBI.TTF") format("ttf"), url("../fonts/GOTHICI.TTF") format("ttf");
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url("../fonts/CenturyGothic-BoldItalic.woff2") format("woff2"), url("../fonts/CenturyGothic-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url("../fonts/CenturyGothic-Bold.woff2") format("woff2"), url("../fonts/CenturyGothic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -32,6 +54,7 @@
   transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
   padding: 13px 50px;
   cursor: pointer;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .btn--small {
@@ -474,6 +497,7 @@ button:focus {
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
+  font-family: "Century Gothic", sans-serif;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -617,6 +641,7 @@ button:focus {
   font-size: 20px;
   line-height: 2rem;
   margin: 50px 0 0 0;
+  font-family: "Century Gothic", sans-serif;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -662,6 +687,7 @@ button:focus {
 
 .main-about__description {
   color: gray;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .main-about__imgs {
@@ -742,6 +768,7 @@ button:focus {
 .main-general__info .main-general__title {
   font-size: 50px;
   font-weight: 700;
+  font-family: "Century Gothic", sans-serif;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -765,10 +792,10 @@ button:focus {
 .main-general-text {
   display: block;
   margin: 0;
-  font-style: italic;
   color: #DF8239;
   font-size: 18px;
   line-height: 22px;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .main-general-text:before {
@@ -871,6 +898,7 @@ button:focus {
   font-size: 15px;
   line-height: 23px;
   font-weight: 400;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .main-training .main-training__process span {
@@ -878,6 +906,7 @@ button:focus {
   font-size: 4rem;
   font-weight: 800;
   margin-bottom: 70px;
+  font-family: "Century Gothic", sans-serif;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -915,6 +944,7 @@ button:focus {
 .main-training .main-training__title h2 {
   font-size: 1rem;
   font-weight: 700;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .main-training .main-training__container {
@@ -976,6 +1006,7 @@ button:focus {
 
 .main-how h3 {
   color: #fff;
+  font-family: "Century Gothic", sans-serif;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1144,6 +1175,7 @@ button:focus {
   align-items: center;
   position: relative;
   height: 200px;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .main-steps__content .main-steps__body span {
@@ -1152,6 +1184,7 @@ button:focus {
   font-weight: 800;
   opacity: .5;
   color: #DF8239;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .main-steps__content .main-steps__body p {
@@ -1193,6 +1226,7 @@ button:focus {
   color: #0B1A1C;
   font-size: 18px;
   font-weight: 600;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .main-service__description {
@@ -1200,6 +1234,8 @@ button:focus {
   font-size: 15px;
   line-height: 23px;
   font-weight: 400;
+  font-family: "Century Gothic", sans-serif;
+  margin-top: 10px;
 }
 
 .main-service__img {
@@ -1267,6 +1303,7 @@ button:focus {
   margin-bottom: 10px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .main-footer__contact a:hover {
@@ -1300,12 +1337,14 @@ button:focus {
   font-weight: 600;
   margin-bottom: 15px;
   color: #DF8239;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .main-footer__description {
   color: gray;
   font-size: 17px;
   margin-bottom: 30px;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .form-control {
@@ -1319,6 +1358,7 @@ button:focus {
   background: #F6F7F9;
   color: #efc09c;
   font-size: 14px;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .form-control:focus {
@@ -1335,9 +1375,14 @@ button:focus {
   margin-top: 50px;
 }
 
+.main-footer__copy p {
+  font-family: "Century Gothic", sans-serif;
+}
+
 .main-footer__copy a {
   color: #DF8239;
   text-decoration: none;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .main-footer__copy a:hover {

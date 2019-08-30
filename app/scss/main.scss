@@ -79,6 +79,7 @@ button:focus {
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
+  font-family: $CenturyGothic;
 
   @include respond-to(xs) {
     color: $lightBlack;
@@ -214,6 +215,7 @@ button:focus {
         font-size: 20px;
         line-height: 2rem;
         margin: 50px 0 0 0;
+        font-family: $CenturyGothic;
 
         @include respond-to(md) {
           font-size: 18px;
@@ -255,6 +257,7 @@ button:focus {
 
 .main-about__description {
   color: gray;
+  font-family: $CenturyGothic;
 }
 
 .main-about__imgs {
@@ -326,6 +329,7 @@ button:focus {
   .main-general__title {
     font-size: 50px;
     font-weight: 700;
+    font-family: $CenturyGothic;
 
     @include respond-to(sm) {
       font-size: 40px;
@@ -346,10 +350,10 @@ button:focus {
 .main-general-text {
   display: block;
   margin: 0;
-  font-style: italic;
   color: $orange;
   font-size: 18px;
   line-height: 22px;
+  font-family: $CenturyGothic;
 
   &:before {
     content: "_____";
@@ -449,6 +453,7 @@ button:focus {
         font-size: 15px;
         line-height: 23px;
         font-weight: 400;
+        font-family: $CenturyGothic;
       }
     }
 
@@ -457,6 +462,7 @@ button:focus {
       font-size: 4rem;
       font-weight: 800;
       margin-bottom: 70px;
+      font-family: $CenturyGothic;
 
       @include respond-to(xs) {
         font-size: 3rem;
@@ -494,6 +500,7 @@ button:focus {
     h2 {
       font-size: 1rem;
       font-weight: 700;
+      font-family: $CenturyGothic;
     }
   }
 
@@ -554,6 +561,7 @@ button:focus {
 .main-how {
   h3 {
     color: #fff;
+    font-family: $CenturyGothic;
 
     @include respond-to(md) {
       font-size: 18px;
@@ -723,6 +731,7 @@ button:focus {
     align-items: center;
     position: relative;
     height: 200px;
+    font-family: $CenturyGothic;
 
     span {
       position: absolute;
@@ -730,6 +739,7 @@ button:focus {
       font-weight: 800;
       opacity: .5;
       color: $orange;
+      font-family: $CenturyGothic;
     }
 
     p {
@@ -771,6 +781,7 @@ button:focus {
   color: $lightBlack;
   font-size: 18px;
   font-weight: 600;
+  font-family: $CenturyGothic;
 }
 
 .main-service__description {
@@ -778,6 +789,8 @@ button:focus {
   font-size: 15px;
   line-height: 23px;
   font-weight: 400;
+  font-family: $CenturyGothic;
+  margin-top: 10px;
 }
 
 .main-service__img {
@@ -839,6 +852,7 @@ button:focus {
     margin-bottom: 10px;
     text-decoration: none;
     transition: 0.3s ease-in-out;
+    font-family: $CenturyGothic;
 
     &:hover {
       transition: 0.3s ease-in-out;
@@ -876,12 +890,14 @@ button:focus {
   font-weight: 600;
   margin-bottom: 15px;
   color: #DF8239;
+  font-family: $CenturyGothic;
 }
 
 .main-footer__description {
   color: gray;
   font-size: 17px;
   margin-bottom: 30px;
+  font-family: $CenturyGothic;
 }
 
 .form-control {
@@ -895,6 +911,7 @@ button:focus {
   background: #F6F7F9;
   color: #efc09c;
   font-size: 14px;
+  font-family: $CenturyGothic;
 
   &:focus {
     background: rgba(223, 130, 57, 0.10);
@@ -911,9 +928,14 @@ button:focus {
   justify-content: center;
   margin-top: 50px;
 
+  p {
+    font-family: $CenturyGothic;
+  }
+
   a {
     color: $orange;
     text-decoration: none;
+    font-family: $CenturyGothic;
 
     &:hover {
       text-decoration: none;
