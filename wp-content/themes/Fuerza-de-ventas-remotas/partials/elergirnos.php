@@ -10,7 +10,7 @@
           <div class="main-election__item">
             <div class="main-election__container">
               <div class="main-election__img">
-                <img class="img-round" src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+                <img class="img-round" src="<?php echo get_template_directory_uri(); ?>/assets/img/tecnica.jpeg">
               </div>
               <div class="main-election__content">
                 <div class="main-election__number">
@@ -25,7 +25,7 @@
           <div class="main-election__item">
             <div class="main-election__container">
               <div class="main-election__img">
-                <img class="img-round" src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+                <img class="img-round" src="<?php echo get_template_directory_uri(); ?>/assets/img/innovador.jpeg">
               </div>
               <div class="main-election__content">
                 <div class="main-election__number">
@@ -40,7 +40,7 @@
           <div class="main-election__item">
             <div class="main-election__container">
               <div class="main-election__img">
-                <img class="img-round" src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+               <img class="img-round" src="<?php echo get_template_directory_uri(); ?>/assets/img/clientes.jpeg">
               </div>
               <div class="main-election__content">
                 <div class="main-election__number">
@@ -55,7 +55,8 @@
           <div class="main-election__item">
             <div class="main-election__container">
               <div class="main-election__img">
-                <img class="img-round" src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+              <img class="img-round" src="<?php echo get_template_directory_uri(); ?>/assets/img/servicio.jpeg">
+
               </div>
               <div class="main-election__content">
                 <div class="main-election__number">

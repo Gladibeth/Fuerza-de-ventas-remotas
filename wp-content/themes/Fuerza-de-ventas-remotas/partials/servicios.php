@@ -12,7 +12,7 @@
         <div class="main-service__item">
           <div class="main-service__box">
             <div class="main-service__img">
-              <img class="img-round" src="assets/img/icons/sales.png">
+              <img class="img-round" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/sales.png">
             </div>
             <div class="main-service__info">
               <div class="main-service__title">
@@ -27,7 +27,7 @@
         <div class="main-service__item">
           <div class="main-service__box">
             <div class="main-service__img">
-              <img class="img-round" src="assets/img/icons/meeting.png">
+              <img class="img-round" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/meeting.png">
             </div>
             <div class="main-service__info">
               <div class="main-service__title">
@@ -42,7 +42,7 @@
         <div class="main-service__item">
           <div class="main-service__box">
             <div class="main-service__img">
-              <img class="img-round" src="assets/img/icons/win.png">
+              <img class="img-round" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/win.png">
             </div>
             <div class="main-service__info">
               <div class="main-service__title">

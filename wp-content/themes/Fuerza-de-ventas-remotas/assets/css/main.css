@@ -1069,7 +1069,8 @@ button:focus {
 }
 
 .main-briefs__img {
-  width: 200px;
+  width: 250px;
+  height: 300px;
 }
 
 .main-briefs__img img {

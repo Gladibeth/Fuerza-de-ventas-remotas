@@ -11,7 +11,7 @@
       <div class="main-briefs__box">
         <div class="main-briefs__item">
           <div class="main-briefs__img">
-            <img src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+            <img class="img-round"  src="<?php echo get_template_directory_uri(); ?>/assets/img/img5.jpeg">
           </div>
           <div class="main-briefs__content">
             <div class="main-briefs__description">
@@ -21,7 +21,8 @@
         </div>
         <div class="main-briefs__item">
           <div class="main-briefs__img">
-            <img src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+          <img class="img-round"  src="<?php echo get_template_directory_uri(); ?>/assets/img/señora.jpeg">
+
           </div>
           <div class="main-briefs__content">
             <div class="main-briefs__description">
@@ -31,7 +32,8 @@
         </div>
         <div class="main-briefs__item">
           <div class="main-briefs__img">
-            <img src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+          <img class="img-round"  src="<?php echo get_template_directory_uri(); ?>/assets/img/img.jpeg">
+
           </div>
           <div class="main-briefs__content">
             <div class="main-briefs__description">

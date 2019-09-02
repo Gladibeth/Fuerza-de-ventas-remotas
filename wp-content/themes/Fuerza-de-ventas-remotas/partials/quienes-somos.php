@@ -3,10 +3,10 @@
       <div class="main-about__content">
         <div class="main-about__imgs">
           <div class="main-about__img--first">
-            <img class="img-round" src="assets/img/img3.jpg">
+            <img class="img-round" src="<?php echo get_template_directory_uri(); ?>/assets/img/img3.jpg">
           </div>
           <div class="main-about__img--second">
-            <img class="img-round" src="assets/img/img2.jpg">
+            <img class="img-round" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.jpg">
           </div>
         </div>
         <div class="main-general__info main-about__text">
