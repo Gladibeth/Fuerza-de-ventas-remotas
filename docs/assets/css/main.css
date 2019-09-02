@@ -413,6 +413,109 @@ body {
   color: #00b050;
 }
 
+.main-election__items .slick-prev {
+  z-index: 2;
+  height: 40px;
+  width: 40px;
+  top: -20%;
+  right: 3%;
+  background-color: transparent;
+  width: 65px;
+  height: 64px;
+}
+
+.main-election__items .slick-prev:before {
+  font-size: 25px;
+  color: #DF8239;
+  content: "\f053";
+  font-family: 'FontAwesome';
+  z-index: 3;
+}
+
+.main-election__items .slick-prev:hover {
+  outline: none;
+  background: transparent;
+  color: #DF8239;
+}
+
+.main-election__items .slick-next {
+  right: -1%;
+  z-index: 2;
+  height: 40px;
+  width: 40px;
+  top: -20%;
+  background-color: transparent;
+  width: 65px;
+  height: 64px;
+}
+
+.main-election__items .slick-next:before {
+  font-size: 25px;
+  color: #DF8239;
+  content: "\f054";
+  font-family: 'FontAwesome';
+}
+
+.main-election__items .slick-next:hover {
+  outline: none;
+  background: transparent;
+  color: #DF8239;
+}
+
+.main-election__items .slick-dots {
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  bottom: -30%;
+  right: 55%;
+  width: 0%;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-election__items .slick-dots {
+    left: 40%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-election__items .slick-dots {
+    left: 35%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-election__items .slick-dots {
+    left: 35%;
+  }
+}
+
+.main-election__items .slick-dots .slick-active button:before {
+  color: #00b050;
+  opacity: 0.75;
+  width: 35px;
+  margin: 0;
+}
+
+.main-election__items .slick-dots li {
+  margin: 0 10px;
+}
+
+.main-election__items .slick-dots li button:before {
+  color: gray;
+  content: '';
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background: #DF8239;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.main-election__items .slick-dots li button:hover:before, .main-election__items .slick-dots li button:focus:before {
+  color: #00b050;
+}
+
 section {
   padding: 100px 0 0 0;
 }
@@ -785,8 +888,9 @@ button:focus {
 
 .main-general__info .main-general__description {
   color: #707070;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 25px;
+  font-family: "Century Gothic", sans-serif;
 }
 
 .main-general-text {
@@ -951,10 +1055,116 @@ button:focus {
   margin-left: 45px;
 }
 
+.main-briefs__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 40px;
+}
+
+.main-briefs__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-briefs__img {
+  width: 200px;
+}
+
+.main-briefs__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-briefs__description {
+  margin-top: 25px;
+  padding: 0 20px;
+}
+
+.main-briefs__description p {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.main-election {
+  padding-bottom: 100px;
+}
+
+.main-election__container {
+  display: flex;
+  grid-template-columns: 50% 50%;
+}
+
+.main-election__items {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+}
+
+.main-election__box {
+  margin-top: 70px;
+}
+
+.main-election__img {
+  height: 250px;
+}
+
+.main-election__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-election__content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.main-election__number {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.main-election__number span {
+  color: rgba(223, 130, 57, 0.67);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 70px;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.main-election__description p {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.main-work__box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+  margin-top: 50px;
+}
+
+.main-work__img {
+  height: 400px;
+}
+
+.main-work__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .main-parallax {
   background-image: url("../img/about.jpg");
   background-size: cover;
-  height: 85vh;
+  height: 90vh;
   background-attachment: fixed;
   position: relative;
   background-position: 50% -140px;
@@ -1007,6 +1217,7 @@ button:focus {
 .main-how h3 {
   color: #fff;
   font-family: "Century Gothic", sans-serif;
+  font-size: 25px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1273,7 +1484,7 @@ button:focus {
 
 .main-footer__content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 50% 50%;
   grid-gap: 20px;
 }
 
@@ -1287,6 +1498,16 @@ button:focus {
   .main-footer__content {
     grid-template-columns: 100%;
   }
+}
+
+.main-footer__content-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer__dates {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1366,6 +1587,96 @@ button:focus {
   border-color: transparent !important;
   outline: 0;
   box-shadow: 0 0 0 0.2rem transparent !important;
+}
+
+.hidden,
+#uploadImg:not(.hidden) + label {
+  display: none;
+}
+
+#file {
+  display: none;
+  margin: 0 auto;
+}
+
+#upload {
+  display: block;
+  width: 100%;
+  margin: 0 0px 20px;
+  height: 45px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #F6F7F9;
+  color: gray;
+  text-align: left;
+  font-size: 14px;
+  font-family: "Century Gothic", sans-serif;
+}
+
+#upload:hover, #upload:focus {
+  background: rgba(223, 130, 57, 0.1);
+}
+
+#upload:active {
+  background: rgba(223, 130, 57, 0.1);
+  transition: .1s ease-in-out;
+}
+
+.input-file-container {
+  position: relative;
+}
+
+.js .input-file-trigger {
+  display: block;
+  padding: 14px 15px;
+  background: #f6f7f9;
+  color: gray;
+  font-size: 15px;
+  transition: all .4s;
+  cursor: pointer;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.js .input-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 225px;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  background: rgba(223, 130, 57, 0.1);
+  border-color: transparent !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem transparent !important;
+}
+
+.file-return {
+  margin: 0;
+}
+
+.file-return:not(:empty) {
+  margin: 1em 0;
+}
+
+.js .file-return {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+
+.js .file-return:not(:empty):before {
+  content: "Selected file: ";
+  font-style: normal;
+  font-weight: normal;
 }
 
 .main-footer__copy {

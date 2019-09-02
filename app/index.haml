@@ -9,6 +9,8 @@
     %link{rel: "stylesheet", href:"assets/css/slick.css"}/
     %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
     %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+    / Favicons
+    %link{:href => "assets/img/favicon.ico", :rel => "shortcut icon"}/
   %body
 
     %header#home
@@ -21,7 +23,7 @@
                 %span (+569) 0 123 45 67
               %a{ href: '#' }
                 %i.fa.fa-envelope
-                %span Contacto@fuerzadeventaremota.cl
+                %span hola@fuerzadeventaremota.cl
             .main-nav__redes
               %a{ href: '#' }
                 %i.fa.fa-facebook 
@@ -33,7 +35,7 @@
         .container
           .main-brand
             %a.navbar-brand{:href => "#"}
-              %img#iso{:src => "assets/img/logo.png"}/
+              %img#iso{:src => "assets/img/logo.jpg"}/
             %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
               %span.hamburger-box
                 %span.hamburger-inner
@@ -56,18 +58,18 @@
           .mask
             .main-banner__text
               .main-banner__title
-                %p Somos expetos en lo que hacemos
+                %p Elige el servicio que mejor se adapte a tus objetivos
               .main-banner__description
-                %p Modelo innovador en cuanto a tecnicas comerciales y de partnership con nuestros clientes 
+                %p Fuerza de ventas remota 360.
           .main-banner__img
             %img{ :src => "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"}/
         .main-banner__item
           .mask
             .main-banner__text
               .main-banner__title
-                %p Deja tu gestion comercial en nuestras manos
+                %p Elige el servicio que mejor se adapte a tus objetivos
               .main-banner__description
-                %p Nos enfocamos en generacion de leads combinando nuestras experiencia en ventas + el marketing digital.
+                %p Generación de reuniones con prospectos de clientes.
           .main-banner__img
             %img{ :src => "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"}/
     %section.main-about#about
@@ -75,9 +77,9 @@
         .main-about__content
           .main-about__imgs
             .main-about__img--first
-              %img.img-round{ :src => "https://images.unsplash.com/photo-1539343915366-4da26f7a1f2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"}/
+              %img.img-round{ :src => "assets/img/img3.jpg"}/
             .main-about__img--second
-              %img.img-round{ :src => "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"}/
+              %img.img-round{ :src => "assets/img/img2.jpg"}/
           .main-general__info.main-about__text
             .main-general-text
               Nosotros
@@ -89,19 +91,19 @@
       .container
         .main-general__info
           .main-general-text
-            Nosotros
+            Nuestros
           .main-general__title
             Servicios
         .main-service__content
           .main-service__item
             .main-service__box
               .main-service__img
-                %img.img-round{ :src => "assets/img/icons/win.png"}/
+                %img.img-round{ :src => "assets/img/icons/sales.png"}/
               .main-service__info
                 .main-service__title
-                  Leads calificados
+                  Fuerza de ventas remota 360
                 .main-service__description
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nostrum saepe dolor, repellendus impedit.
+                  Llevamos todo el proceso de ventas desde la definición de segmentos objetivos, hasta el cierre de negocios.
           .main-service__item
             .main-service__box
               .main-service__img
@@ -110,16 +112,16 @@
                 .main-service__title
                   Reuniones con prospectos  de clientes
                 .main-service__description
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nostrum saepe dolor, repellendus impedit.
+                  Llegamos al prospecto calificado para tu reunión de negocio.
           .main-service__item
             .main-service__box
               .main-service__img
-                %img.img-round{ :src => "assets/img/icons/sales.png"}/
+                %img.img-round{ :src => "assets/img/icons/win.png"}/
               .main-service__info
                 .main-service__title
-                  Fuerza de ventas
+                  Prospección de leads calificados
                 .main-service__description
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus nostrum saepe dolor, repellendus impedit.
+                  Por medio de diversos medios y estrategias abordamos a los segmentos interesados en tus productos.
 
     %section.main-training.container#training
       .main-training__content
@@ -191,12 +193,185 @@
             
             %img{ :src => "https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
     
+    %section.main-briefs
+      .container
+        .main-general__info
+          .main-general-text
+            Informes de
+          .main-general__title
+            Gestión
+        .main-briefs__box
+          .main-briefs__item
+            .main-briefs__img
+              %img{ :src => "https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+            .main-briefs__content
+              .main-briefs__description
+                %p Manejo de pipeline de negocios con información dos veces por semana al cliente.
+          .main-briefs__item
+            .main-briefs__img
+              %img{ :src => "https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+            .main-briefs__content
+              .main-briefs__description
+                %p Actualización diaria de CRM por parte de las Ejecutivas.
+          .main-briefs__item
+            .main-briefs__img
+              %img{ :src => "https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+            .main-briefs__content
+              .main-briefs__description
+                %p Informes de gestión semanales desde nuestra empresa al cliente.
+    %section.main-election
+      .container
+        .main-general__info
+          .main-general__title
+            ¿Por qué elergirnos?
+        .main-election__box
+          .main-election__items
+            .main-election__item
+              .main-election__container
+                .main-election__img
+                  %img.img-round{ :src => "https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+                .main-election__content
+                  .main-election__number
+                    %span 1
+                  .main-election__description
+                    %p Modelo innovador  en cuanto a técnicas comerciales y de partheship con nuestros cientes.
+            .main-election__item
+              .main-election__container
+                .main-election__img
+                  %img.img-round{ :src => "https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+                .main-election__content
+                  .main-election__number
+                    %span 2
+                  .main-election__description
+                    %p Servicios ajustados a la estructura de cualquier tipo de empresa.
+            .main-election__item
+              .main-election__container
+                .main-election__img
+                  %img.img-round{ :src => "https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+                .main-election__content
+                  .main-election__number
+                    %span 3
+                  .main-election__description
+                    %p Prospección de clientes combinando experiencia en ventas más marketing digital.
+            .main-election__item
+              .main-election__container
+                .main-election__img
+                  %img.img-round{ :src => "https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+                .main-election__content
+                  .main-election__number
+                    %span 4
+                  .main-election__description
+                    %p Niveles de servicios y costos asociados que harán la diferencia.
+                  
+    
+    %section.main-parallax.main-how
+      .overlay
+      .main-general__info.main-general__info--white
+        .main-general__title
+          Selección
+      
+      .main-parallax__content.container
+        %ul
+          %li
+            %input{:checked => "checked", :type => "checkbox"}/
+            %i
+            %h3 El perfil
+            %p Trabajamos con mujeres con experiencia en ventas y que requieren trabajar desde casa, entregando desde cuatro horas de servicio diario en horario de oficina
+          %li
+            %input{:checked => "checked", :type => "checkbox"}/
+            %i
+            %h3 La oferta
+            %p Publicamos en portales de empleo con gran cantidad de visitas del perfil buscado, manteniendo siempre la confidencialidad de nuestro partner.
+          %li
+            %input{:checked => "checked", :type => "checkbox"}/
+            %i
+            %h3 Preselección
+            %p Luego de la revision de los antecedentes y antes de las entrevistas presenciales, se realiza una entrevista telefonica para conocer los intereses y las aptitudes de las postulantes
+        %ul
+          %li
+            %input{:checked => "checked", :type => "checkbox"}/
+            %i
+            %h3 Entrevistas
+            %p Tras el informe entregado acerca de la entrevista telefonica y luego de un analisis, se cita a los mejores perfiles a una entrevista personal para realizar la seleccion final
+          %li
+            %input{:checked => "checked", :type => "checkbox"}/
+            %i
+            %h3 Selección final
+            %p Luego de la realizacion de una entrevista personal y la toma de test de ventas, se selecciona a la cantidad de Ejecutivas que el cliente haya encargado mas un 50% como backup
+          %li
+            %input{:checked => "checked", :type => "checkbox"}/
+            %i
+            %h3 Recomendación de sicólogo laboral
+            %p Los perfiles seleccionados se envianpara una entrevista con un sicologo laboral quien entrega su recomendacion para el cargo buscado
+    %section.main-work
+      .container
+        .main-general__info
+          // .main-general-text
+          //   Informes de
+          .main-general__title
+            Trabaja con nosotros
+          .main-general__description
+            %p Buscamos Ejecutivas Comerciales Freelance en todo Chile, deja tus antecedentes y te contactaremos a la brevedad.
+        .main-work__box
+          .main-work__img
+            %img.img-round{ :src => "https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"}/
+          .main-work__content
+            %form
+              .form-group
+                %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+              .form-group.content-input
+                .input
+                  %input#file{:name => "input", :type => "file"}/
+              .form-group
+                .input-file-container
+                  %input#my-file.input-file{:type => "file"}/
+                  %label.input-file-trigger{:for => "my-file", :tabindex => "0"} Cargar currículum...
 
+              .btn-box.float-right
+                %button.btn_custom.btn--medium.btn--filled
+                  Enviar
+          
+    %section.main-steps
+      .container
+        .main-general__info
+          .main-general-text
+            Pasos a seguir
+          .main-general__title
+            ¿Cómo lo hacemos?
+        .main-steps__content.main-steps__content-desktop
+          .main-steps__body
+            %span 1
+            %p Establecemos metas y estrategias de ventas en conjunto con nuestros clientes.
+          .main-steps__body
+            %span 2
+            %p Seleccionamos perfiles con experiencia en ventas y requerimiento de trabajar desde casa.
+          .main-steps__body
+            %span 3
+            %p Capacitamos en conjunto con nuestros clientes.
+          .main-steps__body
+            %span 4
+            %p Construimos un flujo de ventas ajustados a los productos/servicios que nuestros clientes comercializan.
+          .main-steps__body
+            %span 5
+            %p Entregamos informes y forecast de negocios.
+          .main-steps__body
+            %span 6
+            %p Nuestra estructura organizacional se orienta a la venta.
+          .main-steps__body
+            %span 7
+            %p Nos enfocamos a traspasar a nuestro equipo la cultura de nuestros clientes.
+          .main-steps__body
+            %span 8
+            %p Prestamos servicios marketing en apoyo a la gestión comercial.
     %section.main-client#client
       .container
         .main-general__info
           .main-general-text
-            Nuestros clientes
+            Nuestros
           .main-general__title
             Clientes
         .main-client__content
@@ -231,117 +406,42 @@
             .main-client__img
               %img.img-round{ :src => "assets/img/clients/5.png"}/  
 
-    %section.main-parallax.main-how
-      .overlay
-      .main-general__info.main-general__info--white
-        .main-general-text
-          Prospeccion y Seguimiento 
-        .main-general__title
-          Seleccion
-      
-      .main-parallax__content.container
-        %ul
-          %li
-            %input{:checked => "checked", :type => "checkbox"}/
-            %i
-            %h3 El perfil
-            %p Trabajamos con mujeres con experiencia en ventas y que requieren trabajar desde casa, entregando desde cuatro horas de servicio diario en horario de oficina
-          %li
-            %input{:checked => "checked", :type => "checkbox"}/
-            %i
-            %h3 La oferta
-            %p Publicamos en portales de empleo con gran cantidad de visitas del perfil buscado, manteniendo siempre la confidencialidad de nuestro partner.
-          %li
-            %input{:checked => "checked", :type => "checkbox"}/
-            %i
-            %h3 Preseleccion
-            %p Luego de la revision de los antecedentes y antes de las entrevistas presenciales, se realiza una entrevista telefonica para conocer los intereses y las aptitudes de las postulantes
-        %ul
-          %li
-            %input{:checked => "checked", :type => "checkbox"}/
-            %i
-            %h3 Entrevistas
-            %p Tras el informe entregado acerca de la entrevista telefonica y luego de un analisis, se cita a los mejores perfiles a una entrevista personal para realizar la seleccion final
-          %li
-            %input{:checked => "checked", :type => "checkbox"}/
-            %i
-            %h3 Seleccion final
-            %p Luego de la realizacion de una entrevista personal y la toma de test de ventas, se selecciona a la cantidad de Ejecutivas que el cliente haya encargado mas un 50% como backup
-          %li
-            %input{:checked => "checked", :type => "checkbox"}/
-            %i
-            %h3 Recomendacion de sicologo laboral
-            %p Los perfiles seleccionados se envianpara una entrevista con un sicologo laboral quien entrega su recomendacion para el cargo buscado
-    %section.main-steps
-      .container
-        .main-general__info
-          .main-general-text
-            Paso a seguir
-          .main-general__title
-            ¿Cómo lo hacemos?
-        .main-steps__content.main-steps__content-desktop
-          .main-steps__body
-            %span 1
-            %p Establecemos metas y estrategias de ventas en conjunto con nuestros clientes.
-          .main-steps__body
-            %span 2
-            %p Seleccionamos perfiles con experiencia en ventas y requerimiento de trabajar desde casa.
-          .main-steps__body
-            %span 3
-            %p Capacitamos en conjunto con nuestros clientes.
-          .main-steps__body
-            %span 4
-            %p Construimos un flujo de ventas ajustados a los productos/servicios que nuestros clientes comercializan.
-          .main-steps__body
-            %span 5
-            %p Entregamos informes y forecast de negocios.
-          .main-steps__body
-            %span 6
-            %p Nuestra estructura organizacional se orienta a la venta.
-          .main-steps__body
-            %span 7
-            %p Nos enfocamos a traspasar a nuestro equipo la cultura de nuestros clientes.
-          .main-steps__body
-            %span 8
-            %p Prestamos servicios marketing en apoyo a la gestión comercial.
-
     %footer.main-footer
       .container
         .main-footer__content
-          .main-footer__map
-            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "300", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18585.286111708312!2d-70.17975859254533!3d11.689088858577549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1567191605838!5m2!1ses-419!2sve", :style => "border:0;", :width => "300"}
+          // .main-footer__map
+          //   %iframe{:allowfullscreen => "", :frameborder => "0", :height => "300", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18585.286111708312!2d-70.17975859254533!3d11.689088858577549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1567191605838!5m2!1ses-419!2sve", :style => "border:0;", :width => "300"}
 
           .main-footer__contact
             .main-footer__info
               .main-footer__about
                 .main-footer__subtitle
-                  Siguenos
-                -# .main-footer__title
-                -#   Nosotros
-                .main-footer__description
-                  Por otra parte, nuestros honorarios se basan en un metodo sin par para empresas en proceso de crecimiento comercial.
-
-              %a.mr-3{ href: '#' }
-                %i.fa.fa-phone 
-                %span (+569) 0 123 45 67
-              %a{ href: '#' }
-                %i.fa.fa-envelope
-                %span Contacto@fuerzadeventaremota.cl
-            -# .main-footer__redes
-            -#   %a{ href: '#' }
-            -#     %i.fa.fa-facebook 
-            -#   %a{ href: '#' }
-            -#     %i.fa.fa-twitter
-            -#   %a{ href: '#' }
-            -#     %i.fa.fa-linkedin
+                  Síguenos en nuestras redes sociales
+              .main-footer__content-contact
+                .main-footer__dates
+                  %a.mr-3{ href: '#' }
+                    %i.fa.fa-phone 
+                    %span (+569) 0 123 45 67
+                  %a{ href: '#' }
+                    %i.fa.fa-envelope
+                    %span hola@fuerzadeventaremota.cl
+                .main-footer__redes
+                  %a{ href: '#' }
+                    %i.fa.fa-facebook 
+                  %a{ href: '#' }
+                    %i.fa.fa-twitter
+                  %a{ href: '#' }
+                    %i.fa.fa-linkedin
           .main-footer__form
             .main-footer__subtitle
-              Contactanos
+              Contáctanos
             %form
               .form-group
                 %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
               .form-group
                 %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Empresa", :type => "text"}/
               .form-group
                 %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
               .btn-box.float-right
